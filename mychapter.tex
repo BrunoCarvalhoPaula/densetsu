@@ -1,0 +1,38 @@
+\section{My Chapter} %remove the * if you want headers with number
+This is some text without color\\\\
+\textcolor{blue}{\textbf{This is some text with color}}\\\\
+%
+%
+% let us define a color
+\definecolor{myorange}{RGB}{255,127,0}
+%
+% and now use it
+%
+\begin{tcolorbox}[width=\columnwidth, enhanced, sharp corners, title=box title, colframe=myorange]
+This is a fancy box.
+\end{tcolorbox}
+%
+% maybe we need this box more than once so let us make a reusable macro
+%
+\newcommand{\mybox}[1] { % one argument, we can take more where necessary
+	\begin{tcolorbox}[width=\columnwidth, enhanced, sharp corners, title=box title, colframe=myorange]
+		#1 
+	\end{tcolorbox}
+}
+% #1 will be replaced with the first parameter 
+%
+\mybox{This is also a fancy box}
+%
+% Hint: put macro definitions in the .sty file to avoid confusion
+%
+\subsection{My Subsection}
+%
+\begin{tabular}{| p{0.2\columnwidth} | p{0.7\columnwidth} |}
+	\hline
+	foo     & this is a column          \\ \hline
+	bar     & with newline \newline we can have multi-line columns \\ \hline
+\end{tabular}
+%
+%
+%
+% 

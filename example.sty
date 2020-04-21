@@ -1,0 +1,49 @@
+% Below are some inlcuded packages, add more as needed
+\usepackage[english]{babel}
+\usepackage[babel,style=english]{csquotes}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[pass]{geometry}
+\usepackage{hyperref}
+\usepackage[verbose]{wrapfig}
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage[pages=some]{background}
+\usepackage{sectsty}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[quiet,no-math]{fontspec}
+\usepackage{anyfontsize}
+\usepackage[normalem]{ulem}
+\usepackage{soul}
+\usepackage{fancyhdr}
+\usepackage{vwcol}  
+\usepackage[most]{tcolorbox}
+
+% No indentation on new paragraphs
+\setlength\parindent{0cm}
+
+% Font settings
+\setsansfont[Ligatures=TeX]{TeX Gyre Heros}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Page margins
+\newcommand{\defaultgeometry}{\newgeometry{bottom=10mm,top=12mm,right=10mm,left=10mm, columnsep=0.5cm}}
+\defaultgeometry
+
+% Settings for the section headers
+\sectionfont{\fontsize{0.75cm}{0cm}\selectfont \color{black}}
+\subsectionfont{\fontsize{0.55cm}{0cm}\selectfont \color{red}}
+\subsubsectionfont{\fontsize{0.47cm}{0cm}\selectfont \color{black}}
+
+% These supress some dumb warnings
+\hbadness=10000
+\hfuzz=\maxdimen
+\vbadness=\maxdimen
+\newcount\hbadness
+\newcount\vbadness
+\newdimen\hfuzz
+
+% Link colors
+\hypersetup{colorlinks,linkcolor={blue!80!black},citecolor={blue!80!black},urlcolor={blue!80!black}}
